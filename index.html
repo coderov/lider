@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./tpl/favicon.ico">
+
+    <title>UK Company</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./tpl/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./tpl/ie/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+    <link href="./tpl/css/tpl.css" rel="stylesheet">
+    <link href="./tpl/css/main.css" rel="stylesheet">
+    <link href="./tpl/css/account.css" rel="stylesheet">
+    <link href="./tpl/css/orders.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+
+    <script src="./tpl/js/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+
+<script>
+$.ajax({url:'_top.html',async:false,success:function(ans){$(document.body).append(ans);}});
+</script>
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="myModalLabel">Error</h4></div><div class="modal-body"></div><div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">Close</button></div></div></div></div>
+<div id="_JScontent">
+<script>
+/*~CONTENT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+var current_location ='';
+var loading_html ='<div style="text-align:center;padding:15%;"><img src="./img/load-circle.gif"></div>';
+var _account_menu = '';
+var _order_menu = '';
+var _order_menu2 = '';
+var _func = {};
+
+//$.ajax({url:'_account-menu.html',async:false,success:function(ans){_account_menu = ans; }});
+
+
+
+function lc(){
+
+    
+    var hash = location.hash;
+    if(hash=='') hash='index';
+    else hash = hash.substr(1);
+
+    $('#_JScontent').html(loading_html);
+    $.ajax({
+      url:'./html/'+hash+'.html?'+Math.random(),
+      // async:false,
+      error:function(err1,err2){$('#myModal .modal-header h4').text(err1.status); $('#myModal .modal-body').html(err1.statusText); $('#myModal').modal('show'); },
+      success:function(ans){
+        //ans = ans.replace('<i class="hidden">{_account-menu}</i>',_account_menu);
+        $('#_JScontent').html(ans);
+        f = "page_"+hash.replace('-','_');
+        if(typeof _func[f] == 'function') eval("_func."+f+"()");
+      }
+    });
+  }
+
+_tLoc = setInterval(function(){
+  if(current_location!=location.hash) {
+    $('a[href="'+current_location+'"]').parent().removeClass('active');
+    $('a[href="'+location.hash+'"]').parent().addClass('active');
+    lc();
+  }
+  if(!$('body').hasClass('firsttime')) { $('body').addClass('firsttime');lc();}
+  current_location = location.hash;
+},100);
+</script>
+</div> <!-- id="_JScontent -->
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$.ajax({url:'./_bottom.html',success:function(ans){$(document.body).append(ans);}});
+</script>
+
+
+    </body>
+</html>

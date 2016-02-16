@@ -1,0 +1,89 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/****************
+/**** ORDERS ****
+/****************/
+.page-order-confirmation{ padding-bottom: 80px;}
+.page-order-confirmation h3{font-size: 30px; font-weight: 300; padding: 20px 0 20px 0; color: #1B1B1B;}
+/*~ORDER MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.page-order-menu{height: 80px; background-color: #2d4b95; position: relative;}
+.page-order-menu b{ color: #7190db; display: block; float: left;width: 24.9999%; padding-top: 20px; text-align: center;  z-index: 1; position: relative;}
+.page-order-menu b s{display: block; position: absolute; width: 100%; line-height: 1px; height: 1px; border-top: 1px solid #7190db; margin-top: 5px;  left: 50%;}
+.page-order-menu b:last-child s{display: none;}
+.page-order-menu b span{display: block; position: absolute; width: 100%; margin-top: -4px; height: 20px;  background: url(img/order-menu1.png) no-repeat transparent 50% 0;}
+.page-order-menu b.active {color: #fff;}
+.page-order-menu b.active span{background-position: 50% -20px;}
+.page-order-menu b.pass {color: #fff;}
+.page-order-menu b.pass span{background-position: 50% -40px;}
+.page-order-menu b.pass s{border-top-color:#fff;}
+/*~*/
+.page-order-menu2{height: 80px; background-color: #2d4b95; position: relative;}
+.page-order-menu2 div{padding:0; position: relative; color: #fff;border-right: 1px solid #6785d0;height: 80px;}
+.page-order-menu2 div > div{padding:  10px 11% 0 11%; height: 80px; line-height: 18px;}
+.page-order-menu2 div:last-child{border-right:none;}
+.page-order-menu2 .active > div{background-color: #6785d0; }
+.page-order-menu2 big{display: block; line-height: 30px;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.page-order-step{padding-bottom: 20px;}
+.page-order-step .page-myaccount-in{padding-right: 110px; padding-bottom: 80px; background-color: transparent;}
+.page-order-step .page-myaccount-in .input-group.shadow{ background-color: #fff; line-height: 40px; box-shadow: 0 0 15px #e8e8e8;}
+.page-order-step .page-myaccount-in .input-group.shadow .input-group-addon{text-align: right;}
+.page-order-step .page-myaccount-in .input-group.shadow .input-group-addon i{font-size: 80%; line-height: inherit;}
+.page-order-step .page-myaccount-in .input-group.shadow input{border:none; box-shadow: none;}
+/*~*/
+.page-order-step .page-myaccount-gray-in { padding-right: 100px; padding-left:100px; border-right:15px solid #fff;border-left:15px solid #fff; padding-bottom: 80px; background-color: #f8f8f8;}
+/*~*/
+.page-order-step1 .notification-in big{margin-bottom: 40px;}
+/*~*/
+
+/*~*/
+.notification{}
+.notification .notification-in{ background-color: #fff; padding: 80px 110px; background-size: #fff;}
+.notification .notification-in big{font-size: 36px; color: #1ba85a; font-weight: 300;}
+.notification .notification-in big i{ margin-left: -45px; font-weight: normal; margin-right: 15px;}
+/*~*/
+
+/*~*/
+.page-order-step5 .page-myaccount-in{background-color: #fff;}
+.page-order-step5 .page-myaccount-in .input-group{ background-color: transparent; line-height: 40px; overflow: visible;}
+.page-order-step5 .page-myaccount-in .input-group .input-group-addon{text-align: right; background-color: transparent; color: #000; padding-left: 0;}
+.page-order-step5 .page-myaccount-in .input-group input{border:none; background-color: #fff; box-shadow: 0 0 25px #e8e8e8;}
+.page-order-step5 .page-myaccount-in .input-group input{border:none; background-color: #fff; box-shadow: 0 0 25px #e8e8e8;}
+/*~*/
+.page-order-step .pt40{padding-top: 40px !important;}
+/*~*/
+.page-order-step6 .page-myaccount-in{background-color: #fff;}
+.page-order-step6 .divtable{}
+.page-order-step6 .divtable a{font-weight: 400; text-transform: uppercase;}
+.page-order-step6 .divtable a.s{font-weight: normal; text-transform: none;}
+/*~*/
+.page-order-step9 .label-danger{position: absolute; margin: 0 0 0 -80px; padding: 4px 3px 4px 3px;  }
+.page-order-step9 .page-myaccount-in{background-color: #fff;}
+/*~*/
+.page-order-step10 .page-myaccount-in{background-color: #fff;}
+.page-order-step10 h2{padding: 70px 0 30px 0; font-size: 30px; line-height: 30px; font-weight: 300; color: #1b1b1b;}
+.page-order-step10 h4,
+.page-order-step10 h5{padding:0; margin: 0; font-size: 14px; text-transform: uppercase; line-height: 16px; font-weight: bold; color: #404040;}
+.page-order-step10 h5{text-transform: none;}
+.page-order-step10 .listrow .row > div{line-height: 30px;}
+/*~*/
+
+@media screen and (max-width:1200px ){	
+	.page-order-step9 .label-danger{margin: 0 0 0 0px; float: right; position: static;}
+	
+}
+@media screen and (max-width:768px ){	
+	.page-order-step10 .listrow > div{line-height: 20px;}
+	.notification .notification-in{padding: 20px 20px;}		
+	.page-order-step9 .label-danger{margin: -20px 0 0 0; position: absolute; float: none;}
+	.page-order-step .page-myaccount-gray-in{border:none !important; }
+	.page-order-step9 .row{margin: 0 0 10px 0px; }
+	.page-order-step6 .divtable > .row > div{margin-bottom: 20px;}
+	.page-order-step6 .divtable > .row > div.text-center{text-align: left;}
+	.page-order-step6 .divtable > .row > div.text-right{text-align: left;}
+	.page-order-menu2 > div:not(.active){display: none;}
+	.page-order-menu2 > div.active{width: 100%;}
+	.page-order-menu2 > div.active > div{background-color: transparent;}
+	.notification-in{padding-left: 0 !important}
+	.notification-in .btn{margin-left: 15px !important}
+}

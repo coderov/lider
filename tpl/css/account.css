@@ -1,0 +1,121 @@
+/****************
+/* my account ***
+/***************/
+.col-list1 .row{margin: 0 -10px;}
+.col-list1 .row > a,
+.col-list1 .row >span,
+.col-list1 .row address{padding: 16px 0;margin-bottom: 0;}
+.col-list1 .row address{padding-left: 20px;}
+.col-list1 .row > a{font-weight: normal;}
+.col-list1 .row > a.b{font-weight: bold;}
+.col-list1 .row > b{display: none; padding: 16px 0;}
+.col-list1 > .row{border-bottom: 1px solid #d5d5d5; padding-right: 20px;}
+.col-list1 > .row.active{border-bottom: none; background-color: #c4f3b7;}
+.col-list1 > .row.active > a,
+.col-list1 > .row.active > span{display: none;}
+.col-list1 > .row.active > b{display: block;}
+.col-list1 > .row.active > b a{font-weight: normal;  white-space: nowrap; padding: 0 2%;}
+.col-list1 > .row.last a{padding-left: 10px;}
+/* ~ */
+.divtable > .row{padding: 12px 0; margin: 0; color: #404040;}
+.divtable > .row.th div{font-weight: bold; color: #404040;}
+.divtable > .row:nth-child(even){background-color: #f8f8f8;}
+.divtable i.plus{margin-bottom: 10px; position: absolute; margin: -5px 0 0 -12px; display: inline-block; font-size: 20px; font-style: normal;}
+.page-myaccount-gray-in .divtable > .row:nth-child(even){background-color: #fff;}
+/*.divtable.reverse > .row:nth-child(odd){background-color: #f8f8f8;}*/
+
+/*!!! account menu*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.page-myaccount-menu{height: 80px; background-color: #2d4b95;}
+.page-myaccount-menu .col-md-8,
+.page-myaccount-menu .col-md-4{padding-left: 0;}
+.page-myaccount-menu .dropdown{ float: left; padding-top: 20px; line-height: 80px; height: 80px; width: 20%;}
+.page-myaccount-menu .dropdown > a{line-height: 40px; color: #fff; display: block; text-align: center; height: 40px; border-right:1px solid #213e86; font-weight: 500;}
+.page-myaccount-menu .dropdown.open{background-color: #4c7fff;}
+.page-myaccount-menu .dropdown.open a{border-right-color: transparent;}
+.page-myaccount-menu .input-group input{height: 40px; line-height: 40px; border:none; background: #213e86; color: #fff;}
+.page-myaccount-menu .input-group input:focus{box-shadow: none;}
+.page-myaccount-menu .input-group .input-group-addon{color: #fff; background: #213e86;}
+.page-myaccount-menu .input-group input::-webkit-input-placeholder{color: #fff;}
+.page-myaccount-menu .input-group input::-moz-placeholder {color: #fff;}
+.page-myaccount-menu .col-search{padding-top: 20px;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.page-myaccount-in {background-color: #fff; bottom: 0; padding: 0 110px 0 110px;}
+.page-myaccount-gray-in {background-color: #f8f8f8; bottom: 0; padding: 0 110px 0 110px; }
+.page-myaccount .page-myaccount-in{padding-right: 0;}
+.page-myaccount-in h2{font-size: 30px; position: relative;}
+.page-myaccount-in h2 i{position: absolute; color: #9aacd8; margin-left: -50px; }
+.page-myaccount-in hr,
+.page-myaccount-gray-in hr{color: #f8f8f8;}
+hr.x2,
+hr.x2{margin: 40px 0; border-top-width: 3px;}
+.page-myaccount-in .col-content{padding-left: 15px !important; position: relative;}
+.page-myaccount-gray-in,
+.page-myaccount-in {color: #404040;}
+.page-myaccount-in .right-col-in {margin-right: 15px; background-color: #f8f8f8; position: absolute; right: 15px; left: 15px; height: 100vh; top: 0;}
+.page-myaccount-in .right-col div.red .red-in{padding: 25px;}
+.page-myaccount-in .right-col div.red{height: 100px; background: url(img/block2_3.jpg) no-repeat 0 0; background-size: cover; color: #fff;}
+.page-myaccount-in .right-col div.red big{font-size: 18px; font-weight: 300; display: block; line-height: 30px;}
+.page-myaccount-in .right-col div.red b{color: #fff;}
+.page-myaccount-in .right-col .balance {padding: 15px 30px;}
+.page-myaccount-in .right-col .balance > span{display: block; line-height: 50px; border-bottom: 1px solid #ebebeb;}
+.page-myaccount-in .right-col .balance > span span{display: block; float: right;}
+.page-myaccount-in .right-col .balance .money{color: #661a35; font-size: 18px; font-weight: 400;}
+.page-myaccount-in .right-col .balance .money span{font-size: 30px;}
+/*~*/
+.page-myaccount-in .form{line-height: 40px;}
+.page-myaccount-in .table-striped{margin: 20px 0 80px 0;}
+.page-myaccount-in .table-striped th,
+.page-myaccount-in .table-striped td{border: none;}
+@media screen and (max-width:1200px ){	
+	.page-myaccount-in{padding-left: 50px !important; padding-right: 50px !important;}
+	.page-myaccount-gray-in{padding-left: 40px !important; padding-right: 40px !important;}
+	.page-myaccount-in .right-col-in{position: static; height: auto; margin-bottom: 40px;}
+	.page-myaccount-in h2 i{margin-left: -35px;}
+}
+@media screen and (max-width:768px ){	
+	.page-myaccount-in{padding-left: 15px !important; padding-right: 15px !important; padding-bottom: 40px !important;}
+	.page-myaccount-gray-in{padding-left: 5px !important; padding-right: 5px !important; padding-bottom: 40px !important;}
+	.page-myaccount-in .right-col-in{position: static; height: auto; margin-bottom: 40px;}
+	.page-myaccount-menu {height: auto;}
+	.page-myaccount-menu .dropdown{width: 100%; float: none; text-align: left;padding-top: 0;  height: auto;}
+	.page-myaccount-menu .dropdown > a{text-align: left; line-height: 16px; padding: 20px; border-right: none; height: auto;}
+	.page-myaccount-menu .col-search{padding: 20px;}
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/****************
+/* my details ***
+/****************/
+.page-mydetails{margin-bottom: 40px;}
+.page-mydetails .page-myaccount-in h2{padding: 0 0 40px 0; margin: 0;}
+.page-mydetails .page-myaccount-in{padding-right: 10%; padding-bottom: 40px;}
+.page-mydetails .emails{padding-top: 40px;}
+.page-mydetails .emails .row > div{line-height: 50px;}
+.page-mydetails .emails .row > div .form-control{margin-top: 7px;}
+.accountform .row > div{line-height: 50px;}
+.accountform .row div .form-control{margin-top: 7px;}
+.accountform .row div b{color: #1ba85a; position: absolute; margin: -2px 0 0 -10px;}
+.post-addresses{padding: 0 10px; background-color: #fff;}
+.post-addresses h2{padding-bottom: 40px;}
+.post-addresses .post-addresses-in{background-color: #f8f8f8; padding: 50px 100px 40px 100px;}
+@media screen and (max-width:768px ){	
+	.post-addresses .post-addresses-in{padding-left: 0; padding-right: 0;}
+	.accountform .row > div{line-height: 35px;}
+	.accountform .row > div + div{margin-bottom: 20px;}
+	.accountform .row div .form-control{margin-top: 0;}
+	.post-addresses .post-addresses-in .text-right a{margin-right: 20px;}
+	.page-myaccount-in .form .row div + div{margin-bottom: 20px;}
+	.page-mydetails .text-right{text-align: left;}
+	.page-mydetails .post-addresses-in{line-height: 24px}
+	.col-list1 .row:not(.last) address{padding-left: 10px; padding-bottom: 0; padding-top: 5px;}	
+	.col-list1 .row:not(.last) > a{padding-left: 10px; padding-top: 5px;}
+	.col-list1 .row:not(.last) > span{ padding-top: 5px;}
+	.col-list1 .row.active > address{ padding-bottom: 16px;}
+	.col-list1 .row > b{padding: 5px;}
+	.page-myaccount-in h2{margin-bottom: 20px;}
+	.page-myaccount-in .right-col-in{margin-right:0;}
+	.col-list1 > .row.active > b a{letter-spacing: -1px; text-align: right;}
+}
+
